@@ -49,6 +49,16 @@ app.get('/calendar', (req, res) => {
   });
 });
 
+// GET Setting Page
+app.get('/settings', (req, res) => {
+  res.render('pages/setting', {
+    title: 'Settings',
+    layout: 'setting',
+    style: 'css/styleSetting.css',
+    script: 'js/scriptSetting.js',
+  });
+});
+
 app.listen(config.port, (err) => {
   if (err) {
     console.log(err);

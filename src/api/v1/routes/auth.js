@@ -36,9 +36,7 @@ module.exports = (app) => {
           req.body.password,
         );
 
-        return res.json({
-          status: 'OK',
-        }).status(200);
+        return res.redirect('/').status(200);
       } catch (err) {
         return next(err);
       }
@@ -56,13 +54,9 @@ module.exports = (app) => {
         }
 
         // Generate token
-        const token = await userController.generateToken(user);
+        // const token = await userController.generateToken(user);
 
-        return res.json({
-          email: user.email,
-          username: user.username,
-          token,
-        }).status(200);
+        return res.redirect('/home').status(200);
       } catch (err) {
         return next(err);
       }
