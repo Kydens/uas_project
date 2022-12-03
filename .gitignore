@@ -1,4 +1,3 @@
 config/.env
 config/.env.example
 node_modules/
-.eslintrc.json/
