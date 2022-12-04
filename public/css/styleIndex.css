@@ -7,7 +7,7 @@ nav {
 body {
   background-color: white;
   font-size: 16;
-  background-image: url(Assets/background.jpg);
+  background-image: url(../assets/background.jpg);
   background-size: cover;
 }
 .feather {
