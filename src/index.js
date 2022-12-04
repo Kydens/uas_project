@@ -29,6 +29,32 @@ app.get('/home', (req, res) => {
   });
 });
 
+// GET Algorithm Page
+app.get('/webprogramming', (req, res) => {
+  res.render('pages/class', {
+    title: 'Web Programming',
+    layout: 'class',
+    style: 'css/styleClass.css',
+    img: 'assets/webpro.jpg',
+    classCode: 'WP245',
+    dosen: 'Janson Hendryli',
+    asdos: 'Hans Edison',
+    date: '28-11-2022',
+    announce: 'Minggu 15',
+    isiDosen: 'Maaf telat mengabarkan, untuk pertemuan minggu ini silahkan menyelesaikan project masing-masing. Tidak ada online meet. Terima kasih.',
+    isiAsdos: 'Selamat Malam. Besok praktikum dipindahkan menjadi hari Rabu jam 11:30 karena saya ada kunjungan ke wisma BCA, apakah ada yang berhalangan?',
+  });
+});
+
+// GET Grades Page
+app.get('/grades', (req, res) => {
+  res.render('pages/grades', {
+    title: 'Grades',
+    layout: 'grades',
+    style: 'css/styleGrades.css',
+  });
+});
+
 // GET Assignment Page
 app.get('/assignment', (req, res) => {
   res.render('pages/assignment', {

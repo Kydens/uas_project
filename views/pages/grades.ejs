@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <%- include('./layouts/header') %> 
+
+    <title><%= title %> </title>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <%- include('./layouts/navbar') %> 
+    <!--start Point Notification-->
+    <div class="container-notif">
+        <div class="card text-center">
+            <div class="card-header">
+                <b>Your Assignment Updates</b>
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <h6>Web Programming</h6>
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">Assignment</th>
+                            <th scope="col">Point</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>4<sup>th</sup></td>
+                            <td>95</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>2<sup>nd</sup></td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>3<sup>rd</sup></td>
+                            <td>85</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>1<sup>st</sup></td>
+                            <td>78</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card-footer text-muted">
+                updated 2 minute ago
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Script -->
+    <!-- Script Jquery -->
+    <script src="https://api.jquery.com/"></script>
+    <!-- Script External -->
+    <script src="script.js"></script>
+    <!-- Script Feather Icon -->
+    <script>
+        feather.replace()
+    </script>
+</body>
+
+</html>

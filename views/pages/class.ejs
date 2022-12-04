@@ -34,7 +34,7 @@
           <div class="row">
             <div class="col col-lg-3">
               <div class="class-info">
-                <img src="" alt="<%= title %> " style="width: 200px" />
+                <img src="<%= img %>" alt="<%= title %>" style="width: 200px" />
                 <h3><b> <%= title %> Class </b></h3>
                 <div class="row">
                   <div class="col col-sm-1">
@@ -43,7 +43,7 @@
                     </span>
                   </div>
                   <div class="col">
-                    <h4>Nama Dosen</h4>
+                    <h4><%= dosen %></h4>
                   </div>
                   <div>
                     <h5>class code: <%= classCode %></h5>
@@ -63,12 +63,12 @@
                 </a>
               </div>
               <div class="card card-menu">
-                <a href="/Grades/index.html">
+                <a href="/grades">
                   <h5>grades</h5>
                 </a>
               </div>
               <div class="card card-menu">
-                <a href="#">
+                <a href="">
                   <h5>Files</h5>
                 </a>
               </div>
@@ -108,27 +108,21 @@
           </div>
           <div class="col col-sm-3">
             <a href="#">
-              <h5>#Nama Dosen#</h5>
+              <h5><%= dosen %></h5>
             </a>
           </div>
-          <div class="col col-sm-3">#tanggal#</div>
+          <div class="col col-sm-3"><%= date %></div>
           <div class="card card-announce">
             <div class="row">
               <div class="col col-sm-1">
                 <span class="material-symbols-outlined"> campaign </span>
               </div>
               <div class="col">
-                <h4>#Announcement Title#</h4>
+                <h4><%= announce %></h4>
               </div>
             </div>
             <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
+              <%= isiDosen %>
             </p>
           </div>
         </div>
@@ -143,59 +137,22 @@
           </div>
           <div class="col col-sm-3">
             <a href="#">
-              <h5>#Lecturer's assistant#</h5>
+              <h5><%= asdos %></h5>
             </a>
           </div>
-          <div class="col col-sm-3">#tanggal#</div>
+          <div class="col col-sm-3"><%= date %>></div>
           <div class="card card-announce">
             <div class="row">
               <div class="col col-sm-1">
                 <span class="material-symbols-outlined"> campaign </span>
               </div>
               <div class="col">
-                <h4>#Announcement Title#</h4>
+                <h4><%= announce %></h4>
               </div>
             </div>
             <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
+              <%= isiAsdos %> 
             </p>
-          </div>
-        </div>
-      </div>
-
-      <br />
-
-      <div class="card card-header">
-        <div class="row">
-          <div class="col col-sm-1">
-            <span class="material-symbols-outlined"> Assignment </span>
-          </div>
-          <div class="col col-sm-3">#tanggal#</div>
-          <div class="card card-assignment">
-            <h2>#Assignment Title#</h2>
-            <h6>#Due date#</h6>
-            <h6>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </h6>
-            <hr />
-            <a
-              class="btn btn-assignmnent"
-              href="/Assignment/assignment_algo/index.html"
-            >
-              See Assignment
-            </a>
           </div>
         </div>
       </div>
