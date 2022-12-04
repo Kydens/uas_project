@@ -31,7 +31,7 @@ app.get('/home', (req, res) => {
 
 // GET Assignment Page
 app.get('/assignment', (req, res) => {
-  res.render('assignment', {
+  res.render('pages/assignment', {
     title: 'Assignment',
     layout: 'assignment',
     style: 'css/styleAssignment.css',
@@ -41,7 +41,7 @@ app.get('/assignment', (req, res) => {
 
 // GET Calendar Page
 app.get('/calendar', (req, res) => {
-  res.render('calendar', {
+  res.render('pages/calendar', {
     title: 'Calendar',
     layout: 'calendar',
     style: 'css/styleCalendar.css',

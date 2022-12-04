@@ -30,12 +30,6 @@
                 <b>Register</b>
               </h5>
 
-              <% if (typeof errors !== 'undefined') { %>
-              <small id="emailHelp" class="form-text text-muted"
-                ><%= errors.msg %></small
-              >
-              <% } %>
-
               <form action="api/auth/register" method="post">
                 <div class="form-floating mb-3">
                   <input
